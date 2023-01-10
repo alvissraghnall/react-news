@@ -20,19 +20,6 @@ interface ApiArticlesResponseObject extends Pick<ApiSourcesResponseObject, "desc
   source: Pick<ApiSourcesResponseObject, "id" | "name">;
 }
 
-/**
- * {
-	"0": {
-		"id": "abc-news",
-		"name": "ABC News",
-		"description": "Your trusted source for breaking news, analysis, exclusive interviews, headlines, and videos at ABCNews.com.",
-		"url": "https://abcnews.go.com",
-		"category": "general",
-		"language": "en",
-		"country": "us"
-	}
-}
- */
 
 type Ctx = {
   state: never[][] | (ApiSourcesResponseObject & ApiArticlesResponseObject)[][],

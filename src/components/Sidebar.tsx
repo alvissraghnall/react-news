@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction } from "react";
+import type { Dispatch, SetStateAction } from "react";
 import { MouseEventHandler, useContext } from "react";
 import { ApiSourcesResponseObject, ApiStateContext } from "./ApiStateContext";
 import news from "../assets/news.jpg";
