@@ -13,8 +13,10 @@ type SidebarProps = {
 }
 
 const Sidebar = ({ toggle, setToggle, selectedChannel, setSelectedChannel }: SidebarProps) => {
-   const [articles, sources] = useContext(ApiStateContext).state;
-   const [setArticles, setSources] = useContext(ApiStateContext).setters;
+   const { state, setters } = useContext(ApiStateContext);
+
+   const [articles, sources] = state;
+   const [setArticles, setSources] = setters;
 
    console.log(articles, sources);
 
